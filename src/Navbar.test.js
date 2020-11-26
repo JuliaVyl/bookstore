@@ -2,7 +2,7 @@ import { shallow } from 'enzyme';
 import Navbar from './components/navbar/Navbar'
 
 describe('Navbar', () => {
-  it('', () => {
+  it('has tag nav', () => {
     const navWrapper = shallow(<Navbar/>);
     const navTag = navWrapper.find('nav');
 

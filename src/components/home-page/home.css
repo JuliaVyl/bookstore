@@ -1,0 +1,39 @@
+.home {
+  max-width: 1120px;
+  width: 1120px;
+  height: 702px;
+  background: url(../../assets/img/bg_banner.jpg) center no-repeat;
+  padding-top: 247px;
+  padding-left: 332px;
+}
+.home__first-promo {
+  width: 149px;
+  height: 204px;
+  background: #9E98DC url(../../assets/img/icons/arrow.svg) no-repeat right 70px bottom 19px;
+  position: absolute;
+  top: 195px;
+  right: 74px;
+  box-shadow: 0px 24px 36px rgba(53, 49, 84, 0.28);
+}
+.home__second-promo {
+  width: 158px;
+  height: 273px;
+  background: #FF8FE6 url(../../assets/img/icons/arrow.svg) no-repeat right 80px bottom 19px;
+  position: absolute;
+  top: 475px;
+  right: -23px;
+  box-shadow: 0px 24px 36px rgba(53, 49, 84, 0.28);
+}
+.promo-text {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #1C2A39;
+}
+.home__first-promo-text {
+  margin: 102px 20px 36px 20px;
+}
+.home__second-promo-text {
+  margin: 169px 68px 36px 20px;
+}

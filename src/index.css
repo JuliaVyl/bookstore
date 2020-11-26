@@ -441,7 +441,7 @@ body {
   font-style: normal;
   font-weight: normal;
   color: #5C6A79;
-
+  position: absolute;
   max-width: 1440px;
   margin: 0 auto;
 }

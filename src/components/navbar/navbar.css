@@ -1,11 +1,11 @@
 .navbar {
   width: 100%;
   height: 116px;
-  border: 1px solid grey;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  background: #fff;
 }
 .navbar__logo {
   font-weight: bold;
@@ -25,9 +25,14 @@
 }
 .navbar__link {
   margin-right: 40px;
+  text-decoration: none;
+  color: #5C6A79;
 }
 .navbar__link:last-child {
   margin-right: 0;
+}
+.navbar__link:hover, .navbar__link:focus, .navbar__link:active {
+  opacity: .75;
 }
 .navbar__link_active {
   font-weight: 900;
