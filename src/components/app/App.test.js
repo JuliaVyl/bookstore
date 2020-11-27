@@ -1,6 +1,7 @@
 import { shallow } from 'enzyme';
 import Home from '../home-page/Home';
 import Navbar from '../navbar/Navbar'
+import Books from '../books/Books';
 import App from './App';
 
 describe('App', () => {
@@ -16,6 +17,13 @@ describe('App', () => {
     const homepage = appWrapper.find(Home);
 
     expect(homepage).toHaveLength(1);
+  });
+
+  it('has component Books', () => {
+    const appWrapper = shallow(<App/>);
+    const bookspage = appWrapper.find(Books);
+
+    expect(bookspage).toHaveLength(1);
   });
 
 });
