@@ -14,16 +14,14 @@ describe('App', () => {
 
   it('has component Home', () => {
     const appWrapper = shallow(<App/>);
-    const homepage = appWrapper.find(Home);
+    const homePage = appWrapper.find(Home);
 
-    expect(homepage).toHaveLength(1);
+    expect(homePage).toHaveLength(1);
   });
-
   it('has component Books', () => {
     const appWrapper = shallow(<App/>);
-    const bookspage = appWrapper.find(Books);
+    const booksPage = appWrapper.find(Books);
 
-    expect(bookspage).toHaveLength(1);
+    expect(booksPage).toHaveLength(1);
   });
-
 });

@@ -1,3 +1,4 @@
+import Books from "../books/Books";
 import Home from "../home-page/Home";
 import Navbar from "../navbar/Navbar";
 import Books from '../books/Books';

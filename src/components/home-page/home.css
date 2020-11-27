@@ -22,8 +22,9 @@
 .home__logo::after {
   content: "Bookstore";
   color: #FFFFFF;
-  margin-left: -329px;
-  margin-top: 10px;
+  display: block;
+  margin-left: -5px;
+  margin-top: -78px;
 }
 .home__first-promo {
   width: 149px;
