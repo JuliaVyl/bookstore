@@ -1,7 +1,7 @@
 import Books from "../books/Books";
+import Footer from "../footer/Footer";
 import Home from "../home-page/Home";
 import Navbar from "../navbar/Navbar";
-import Books from '../books/Books';
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <Navbar />
       <Home />
       <Books />
+      <Footer />
     </div>
   );
 }

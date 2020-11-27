@@ -2,6 +2,7 @@ import { shallow } from 'enzyme';
 import Home from '../home-page/Home';
 import Navbar from '../navbar/Navbar'
 import Books from '../books/Books';
+import Footer from '../footer/Footer';
 import App from './App';
 
 describe('App', () => {
@@ -18,10 +19,18 @@ describe('App', () => {
 
     expect(homePage).toHaveLength(1);
   });
+
   it('has component Books', () => {
     const appWrapper = shallow(<App/>);
     const booksPage = appWrapper.find(Books);
 
     expect(booksPage).toHaveLength(1);
+  });
+
+  it('has component Footer', () => {
+    const appWrapper = shallow(<App/>);
+    const footer = appWrapper.find(Footer);
+
+    expect(footer).toHaveLength(1);
   });
 });

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-
-const Books = () => (
-  <div className="books"></div>
-=======
 import Categories from '../categories/Categories';
 import BooksList from '../books-list/BooksList';
 
@@ -15,7 +10,6 @@ const Books = () => (
       <BooksList />
     </div>
   </div>
->>>>>>> feature/books-page
 )
 
 export default Books;
