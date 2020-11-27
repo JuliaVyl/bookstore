@@ -1,5 +1,5 @@
 import { shallow } from 'enzyme';
-import Navbar from './components/navbar/Navbar'
+import Navbar from './Navbar'
 
 describe('Navbar', () => {
   it('has tag nav', () => {

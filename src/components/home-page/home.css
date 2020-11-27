@@ -1,10 +1,29 @@
 .home {
-  max-width: 1120px;
-  width: 1120px;
-  height: 702px;
-  background: url(../../assets/img/bg_banner.jpg) center no-repeat;
-  padding-top: 247px;
-  padding-left: 332px;
+}
+.home__wrapper {
+  padding: 0 160px;
+  margin-bottom: 134px;
+}
+.home__bg {
+  width: 100%;
+  background-size: cover;
+  margin-top: 116px;
+}
+.home__logo {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 73px;
+  color: #534FD2;
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home__logo::after {
+  content: "Bookstore";
+  color: #FFFFFF;
+  margin-left: -329px;
+  margin-top: 10px;
 }
 .home__first-promo {
   width: 149px;

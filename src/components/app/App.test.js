@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
+import Home from '../home-page/Home';
+import Navbar from '../navbar/Navbar'
 import App from './App';
-import Home from './components/home-page/Home';
-import Navbar from './components/navbar/Navbar'
 
 describe('App', () => {
   it('has component Navbar', () => {

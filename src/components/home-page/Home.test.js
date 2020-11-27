@@ -1,5 +1,5 @@
 import { shallow } from 'enzyme';
-import Home from './components/home-page/Home';
+import Home from './Home';
 
 describe('Navbar', () => {
   it('has home class', () => {
