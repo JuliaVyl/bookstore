@@ -10,10 +10,4 @@ describe('BooksList', () => {
     expect(booksClass).toHaveLength(1);
   });
 
-  // it('has component Categories', () => {
-  //   const booksWrapper = shallow(<Books/>);
-  //   const listOfCategories = booksWrapper.find(Categories);
-
-  //   expect(listOfCategories).toHaveLength(1);
-  // });
 });

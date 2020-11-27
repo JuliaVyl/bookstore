@@ -1,5 +1,6 @@
 .categories {
   margin-bottom: 100px;
+  width: 416px;
 }
 .categories__list {
   display: flex;

@@ -1,0 +1,66 @@
+.books-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 76px;
+  row-gap: 96px;
+  margin: 46px 0 96px -60px;
+}
+.books-list__book-card {
+  grid-column: span 1;
+  max-width: 424px;
+  display: flex;
+}
+.book-card__image {
+  min-width: 212px;
+  height: 300px;
+}
+.book-card__image-pic {
+  width: 100%;
+  background-size: cover;
+  box-shadow: 0px 24px 36px rgba(53, 49, 84, 0.28);
+}
+.book-card__about {
+  display: flex;
+  flex-direction: column;
+  width: 212px;
+  padding: 48px 0 48px 36px;
+}
+.about__author {
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #5C6A79;
+  margin-bottom: 4px;
+}
+.about__title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1C2A39;
+  margin-bottom: 16px;
+}
+.about__description {
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #5C6A79;
+  margin-bottom: 16px;
+}
+.about__cost {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #1C2A39;
+  margin-bottom: 16px;
+}
+.about__buy-btn {
+  color: #4C3DB2;
+  border: 1px solid #4C3DB2;
+  background-color: #fff;
+  font-weight: bold;
+  font-size: 8px;
+  line-height: 10px;
+  text-transform: uppercase;
+  padding: 18px 66px;
+}
