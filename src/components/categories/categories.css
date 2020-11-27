@@ -1,0 +1,33 @@
+.categories {
+  margin-bottom: 100px;
+}
+.categories__list {
+  display: flex;
+  flex-direction: column;
+  background: #EFEEF6;
+  max-width: 416px;
+  padding-bottom: 43px;
+}
+
+.categories__list-item { 
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: capitalize;
+  color: #5C6A79;
+  text-decoration: none;
+  padding-left: 160px;
+  margin-top: 23px;
+}
+.categories__list-item:hover {
+  transform: scale(1.1)
+}
+.categories__bestsellers {
+  margin-top: 44px;
+  margin-left: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1C2A39;
+  background: url('../../assets/img/icons/ellipse-bestsellers.svg') no-repeat left 146px center;
+}
