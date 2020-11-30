@@ -19,6 +19,7 @@
   text-decoration: none;
   padding-left: 160px;
   margin-top: 23px;
+  transition: all .2s;
 }
 .categories__list-item:hover {
   transform: scale(1.1)

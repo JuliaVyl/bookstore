@@ -19,11 +19,16 @@ const booksError = (error) => {
   };
 };
 
-const fetchBooks = (bookstoreService) => () => (dispatch) => {
-  dispatch(booksRequested());
-  bookstoreService.getBooks()
-    .then((data) => dispatch(booksLoaded(data)))
-    .catch((err) => dispatch(booksError(err)));
+const  fetchBooks = (bookstoreService) => async (dispatch) => {
+  try {
+    dispatch(booksRequested());
+    const data = await bookstoreService.getBooks();
+    dispatch(booksLoaded(data));
+  }
+  catch (e) {
+    dispatch(booksError(e));
+  }
+  
 }
 
 export {

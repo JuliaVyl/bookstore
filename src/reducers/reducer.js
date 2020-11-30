@@ -1,8 +1,9 @@
-import {FETCH_BOOKS_REQUEST, FETCH_BOOKS_SUCCESS} from '../action-types'
+import {FETCH_BOOKS_FAILURE, FETCH_BOOKS_REQUEST, FETCH_BOOKS_SUCCESS} from '../action-types'
 
 const initialState = {
   books: [],
-  loader: false
+  loader: false,
+  error: null
 }
 
 const reducer = (state = initialState, action) => {
@@ -20,7 +21,7 @@ const reducer = (state = initialState, action) => {
         loading: false,
         error: null
       };
-    case 'FETCH_BOOKS_FAILURE':
+    case FETCH_BOOKS_FAILURE:
       return {
         books: [],
         loading: false,

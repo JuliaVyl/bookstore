@@ -1,4 +1,5 @@
 import img1 from '../../assets/img/book-1.jpg';
+import './book-list-item.css';
 
 const BookListItem = () => {
   return (
