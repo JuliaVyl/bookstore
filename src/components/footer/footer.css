@@ -43,7 +43,10 @@
 .footer__contacts-links {
   font-size: 10px;
   margin-right: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+}
+.footer__contacts-links:last-child {
+  margin-bottom: 0;
 }
 .footer__contacts-links:hover {
   color: #838f9b;

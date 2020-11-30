@@ -32,6 +32,11 @@
   top: 195px;
   right: 74px;
   box-shadow: 0px 24px 36px rgba(53, 49, 84, 0.28);
+  transition: all .2s;
+}
+.home__first-promo:hover {
+  transform: scale(1.1);
+  background: #9E98DC url(../../assets/img/icons/arrow.svg) no-repeat right 65px bottom 19px;
 }
 .home__second-promo {
   width: 158px;
@@ -41,6 +46,11 @@
   top: 475px;
   right: -23px;
   box-shadow: 0px 24px 36px rgba(53, 49, 84, 0.28);
+  transition: all .2s;
+}
+.home__second-promo:hover {
+  transform: scale(1.1);
+  background: #FF8FE6 url(../../assets/img/icons/arrow.svg) no-repeat right 75px bottom 19px;
 }
 .promo-text {
   font-weight: bold;
