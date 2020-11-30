@@ -5,3 +5,6 @@
   row-gap: 96px;
   margin: 46px 0 96px -60px;
 }
+.books-list__no-books {
+  margin-left: 20px; 
+}

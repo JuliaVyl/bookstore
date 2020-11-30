@@ -15,7 +15,7 @@ const BooksList = () => {
   }, [dispatch, api]); 
 
   if (!books.length) {
-    return <p>No books...</p>
+    return <p className="books-list__no-books">No books...</p>
   }
   
   return (

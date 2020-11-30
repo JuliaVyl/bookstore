@@ -4,13 +4,14 @@
   display: flex;
 }
 .book-card__image {
-  min-width: 212px;
-  height: 300px;
+  width: 212px;
+  height: 300px;  
+  overflow: hidden; 
+  box-shadow: 0px 24px 36px rgba(53, 49, 84, 0.28);
 }
 .book-card__image-pic {
   width: 100%;
   background-size: cover;
-  box-shadow: 0px 24px 36px rgba(53, 49, 84, 0.28);
 }
 .book-card__about {
   display: flex;
