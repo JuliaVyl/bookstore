@@ -6,5 +6,8 @@
   margin: 46px 0 96px -60px;
 }
 .books-list__no-books {
-  margin-left: 20px; 
+  margin-left: 20px;
+  font-weight: normal;
+  font-size: 16px;
+  text-transform: uppercase;
 }

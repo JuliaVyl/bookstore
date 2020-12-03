@@ -1,0 +1,22 @@
+.error {
+  position: absolute;left: 50%; 
+}
+.error__pic {
+ margin-bottom: 20px; 
+ margin-left: 70px;
+}
+.error__oops {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+.error__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+.error__oops, .error__text {
+  text-transform: uppercase;
+  text-align: center;
+}
