@@ -2,7 +2,7 @@ import './categories.css';
 
 const Categories = () => {
   return (
-    <div className="categories">
+    <div className="categories" id="books">
       <ul className="categories__list">
         <a href="#!" className="categories__list-item categories__bestsellers">Bestsellers</a>
         <a href="#!" className="categories__list-item">{`Art & Fashion`}</a>

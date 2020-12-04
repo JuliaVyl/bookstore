@@ -10,9 +10,9 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar__logo">Bookstore</div>
       <div className="navbar__items">
-        <a href="#!" className="navbar__link navbar__link_active">home</a>
-        <a href="#!" className="navbar__link">books</a>
-        <a href="#!" className="navbar__link">about us</a>
+        <a href="#home" className="navbar__link navbar__link_active">home</a>
+        <a href="#books" className="navbar__link">books</a>
+        <a href="#about" className="navbar__link">about us</a>
       </div>
       <div className="navbar__icons">
         <div className="navbar__search-icon">
@@ -26,7 +26,7 @@ const Navbar = () => {
       <Cart />
     </nav>
   )
-  }
+}
 
 
 export default Navbar;

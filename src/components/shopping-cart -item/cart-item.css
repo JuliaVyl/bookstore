@@ -42,6 +42,9 @@
   margin-right: 10px;
   height: auto;
 }
+.cart__info-minus {
+  padding-bottom: 5px;
+}
 .cart__info-add:hover, .cart__info-add:active {
   background-color: #dddddd;
 }
@@ -50,8 +53,8 @@
 }
 .cart__info-amount {
   margin-right: 10px;
-  padding-top: 2px;
+  padding-top: 4px;
 }
 .cart__info-cost {
-  padding-top: 2px;
+  padding-top: 4px;
 }

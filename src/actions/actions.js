@@ -1,6 +1,7 @@
 import { 
   ADD_TO_CART, FETCH_BOOKS_FAILURE, FETCH_BOOKS_REQUEST, 
-  FETCH_BOOKS_SUCCESS 
+  FETCH_BOOKS_SUCCESS, 
+  SHOW_CART
 } from "../action-types";
 
 const booksRequested = () => {
@@ -27,6 +28,14 @@ export const addToCart = (bookId) => ({
   type: ADD_TO_CART,
   payload: bookId
 });
+
+
+export const showCart = (books) => ({
+  type: SHOW_CART,
+  payload: books
+});
+
+
 
 const  fetchBooks = (bookstoreService) => async (dispatch) => {
   try {

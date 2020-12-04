@@ -51,9 +51,6 @@
 .navbar__cart-icon {
   width: 20px;
 }
-.navbar__cart-icon-pic {
-  background: url('../../assets/img/icons/red-circle.png') no-repeat  top left 8px;
-}
 .navbar__search-icon:hover {
   opacity: .55;
 }

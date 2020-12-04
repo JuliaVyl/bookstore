@@ -2,7 +2,7 @@ import {FETCH_BOOKS_FAILURE, FETCH_BOOKS_REQUEST, FETCH_BOOKS_SUCCESS} from '../
 
 const initialState = {
   books: [],
-  loader: false,
+  loading: false,
   error: null
 }
 
@@ -12,7 +12,7 @@ const booklistReducer = (state = initialState, action) => {
     case FETCH_BOOKS_REQUEST:
       return {
         books: [],
-        loader: true,
+        loading: true,
         error: null 
       };
     case FETCH_BOOKS_SUCCESS:
