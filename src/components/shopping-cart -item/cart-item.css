@@ -1,0 +1,57 @@
+
+.cart__book {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.cart__book-pic {
+  width: 90px; 
+  height: auto;
+  margin-right: 20px;
+}
+.cart__book_left-side {
+  display: flex;
+  flex-direction: wrap;
+  margin-right: 20px;
+}
+.cart__book-author{
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #5C6A79;
+  margin-bottom: 4px;
+}
+.cart__book-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1C2A39;
+  margin-bottom: 8px;
+}
+.cart__book-info {
+  display: flex;
+  flex-direction: wrap;
+  align-self: flex-start;
+  justify-content: flex-end;
+}
+.cart__info-minus, .cart__info-add {
+  background-color: #ebebec;
+  border: none;
+  width: 10px;
+  margin-right: 10px;
+  height: auto;
+}
+.cart__info-add:hover, .cart__info-add:active {
+  background-color: #dddddd;
+}
+.cart__info-minus:hover, .cart__info-minus:active {
+  background-color:#dddddd;
+}
+.cart__info-amount {
+  margin-right: 10px;
+  padding-top: 2px;
+}
+.cart__info-cost {
+  padding-top: 2px;
+}
