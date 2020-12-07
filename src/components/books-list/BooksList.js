@@ -1,6 +1,6 @@
 import { useContext, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchBooks } from '../../actions/actions';
+import { fetchBooks, bookAddedToCart } from '../../actions/actions';
 
 import { apiContext } from '../../index.js';
 import ErrorIndicator from '../error-indicator/ErrorIndicator';
@@ -17,12 +17,20 @@ const BooksList = () => {
   useEffect(() => {
     dispatch(fetchBooks(api));
   }, [dispatch, api]); 
-  
+
   return (
     <div className="books-list">
-      { books.loading && books.books.length && <Spinner/> }
+      { books.loading && <Spinner/> }
       { books.error && <ErrorIndicator/> }
-      { books.books.map((book) => <BookListItem book={book} key={book.id} />) }
+      { books.books.map((book) => {
+        return (
+          <BookListItem 
+            onAddedToCart={() => dispatch(bookAddedToCart(book.id))} 
+            book={book} 
+            key={book.id} />
+        )
+        
+      }) }
     </div>
     
   )

@@ -1,13 +1,15 @@
 import {FETCH_BOOKS_FAILURE, FETCH_BOOKS_REQUEST, FETCH_BOOKS_SUCCESS} from '../action-types'
 
-const initialState = {
-  books: [],
-  loading: false,
-  error: null
-}
-
-const booklistReducer = (state = initialState, action) => {
-
+const booklistReducer = (state, action) => {
+  
+  if (state === undefined) {
+    return {
+      books: [],
+      loading: true,
+      error: null
+    };
+  }
+  
   switch (action.type) {
     case FETCH_BOOKS_REQUEST:
       return {
@@ -28,7 +30,7 @@ const booklistReducer = (state = initialState, action) => {
         error: action.payload
       };
     default:
-      return state;
+      return state.books;
   }
 }
 

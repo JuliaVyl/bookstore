@@ -56,12 +56,18 @@
   font-size: 8px;
   line-height: 10px;
   text-transform: uppercase;
-  padding: 18px 0;
+  height: 46px;
+  width: 176px;
   transition: all .3s;
   width: 176px;
 }
 .about__buy-btn:hover,.about__buy-btn:focus, .about__buy-btn:active {
   background-color: #e3dfff;
   color: #4C3DB2;
+  font-size: 9px;
+}
+.about__buy-btn:active {
+  background-color: #b6b2d8;
+  color: #ffffff;
   font-size: 9px;
 }

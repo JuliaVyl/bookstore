@@ -20,6 +20,7 @@
   align-self: flex-end;
   color: #5C6A79;
   text-decoration: none;
+  cursor: pointer;
 }
 .cart__empty {
   margin-bottom: 20px;

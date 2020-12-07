@@ -1,7 +1,5 @@
 import { 
-  ADD_TO_CART, FETCH_BOOKS_FAILURE, FETCH_BOOKS_REQUEST, 
-  FETCH_BOOKS_SUCCESS, 
-  SHOW_CART
+  FETCH_BOOKS_FAILURE, FETCH_BOOKS_REQUEST, FETCH_BOOKS_SUCCESS, BOOK_ADDED_TO_CART, BOOK_DELETED_FROM_CART
 } from "../action-types";
 
 const booksRequested = () => {
@@ -23,21 +21,22 @@ const booksError = (error) => {
     payload: error
   };
 };
+export const bookAddedToCart = (bookId) => {
+  return {
+    type: BOOK_ADDED_TO_CART,
+    payload: bookId
+  }
+}
 
-export const addToCart = (bookId) => ({
-  type: ADD_TO_CART,
+
+export const bookDeletedFromCart = (bookId) => ({
+  type: BOOK_DELETED_FROM_CART,
   payload: bookId
 });
 
 
-export const showCart = (books) => ({
-  type: SHOW_CART,
-  payload: books
-});
 
-
-
-const  fetchBooks = (bookstoreService) => async (dispatch) => {
+export const fetchBooks = (bookstoreService) => async (dispatch) => {
   try {
     dispatch(booksRequested());
     const data = await bookstoreService.getBooks();
@@ -49,7 +48,4 @@ const  fetchBooks = (bookstoreService) => async (dispatch) => {
   
 }
 
-export {
-  fetchBooks
-};
 
