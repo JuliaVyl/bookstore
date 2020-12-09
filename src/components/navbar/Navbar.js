@@ -4,10 +4,12 @@ import cartIcon from '../../assets/img/icons/shop-bag-ico.png';
 import Cart from '../shopping-cart/Cart';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
+import SearchPannel from '../search-pannel/SearchPannel';
 
 const Navbar = () => {
   
   const [showCart, setCart] = useState(false);
+  const [showSearch, setSearch] = useState(false);
 
   const cart = useSelector(state => state.cart.cartItems);
   const fullCart = cart.length ? true : false;
@@ -21,14 +23,15 @@ const Navbar = () => {
       </div>
       <div className="navbar__icons">
         <div className="navbar__search-icon">
-          <a><img className="navbar__search-icon-pic" src={searchIcon} alt="Search"></img></a>
+          <img className="navbar__search-icon-pic" src={searchIcon} alt="Search" onClick={() => setSearch(true)}></img>
         </div>
         <div className="navbar__cart-icon">
-          {fullCart && <a><img className="navbar__cart-icon-pic-full" src={cartIcon} alt="Cart" onClick={() => setCart(true)}></img></a>}
-          {!fullCart && <a><img className="navbar__cart-icon-pic" src={cartIcon} alt="Cart" onClick={() => setCart(true)}></img></a>}
+          {fullCart && <img className="navbar__cart-icon-pic-full" src={cartIcon} alt="Cart" onClick={() => setCart(true)}></img>}
+          {!fullCart && <img className="navbar__cart-icon-pic" src={cartIcon} alt="Cart" onClick={() => setCart(true)}></img>}
         </div>
       </div>
       {showCart && <Cart closeCart={() => setCart(false)} />}
+      {showSearch && <SearchPannel closeSearchPannel={() => setSearch(false)}/>}
     </nav>
   )
 }

@@ -7,10 +7,11 @@
   flex-direction: column;
   background: #EFEEF6;
   max-width: 416px;
-  padding-bottom: 43px;
+  padding: 50px 0;
 }
 
 .categories__list-item { 
+  cursor: pointer;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
@@ -18,18 +19,25 @@
   color: #5C6A79;
   text-decoration: none;
   padding-left: 160px;
-  margin-top: 23px;
+  margin-bottom: 23px;
   transition: all .2s;
 }
-.categories__list-item:hover {
-  transform: scale(1.1)
+.categories__list-item:last-child {
+  margin-bottom: 0;
 }
-.categories__bestsellers {
-  margin-top: 44px;
+.categories__list-item:hover {
+  transform: scale(1.1);
+}
+.categories__list-item_active {
   margin-left: 14px;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
   color: #1C2A39;
   background: url('../../assets/img/icons/ellipse-bestsellers.svg') no-repeat left 146px center;
+}
+.categories__list-item_active:hover {
+  transform: scale(1);
+  color: #8e9395;
+  
 }
