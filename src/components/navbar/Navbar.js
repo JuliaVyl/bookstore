@@ -2,9 +2,10 @@ import './navbar.css';
 import searchIcon from '../../assets/img/icons/search-ico.png';
 import cartIcon from '../../assets/img/icons/shop-bag-ico.png';
 import Cart from '../shopping-cart/Cart';
-import { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import SearchPannel from '../search-pannel/SearchPannel';
+import { loadCartFromStorage } from '../../actions/actions';
 
 const Navbar = () => {
   
@@ -12,7 +13,18 @@ const Navbar = () => {
   const [showSearch, setSearch] = useState(false);
 
   const cart = useSelector(state => state.cart.cartItems);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(loadCartFromStorage(JSON.parse(localStorage.getItem('cart'))));
+  }, [dispatch]);
+
+  useEffect(() => {
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }, [cart]);
+
   const fullCart = cart.length ? true : false;
+
   return (
     <nav className="navbar">
       <div className="navbar__logo">Bookstore</div>

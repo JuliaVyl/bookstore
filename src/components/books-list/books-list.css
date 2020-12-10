@@ -5,3 +5,15 @@
   row-gap: 96px;
   margin: 46px 0 96px -60px;
 }
+
+@media (min-width: 1880px) {
+  .books-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1390px) {
+  .books-list {
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+  }
+}

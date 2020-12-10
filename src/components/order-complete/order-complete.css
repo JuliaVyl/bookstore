@@ -1,0 +1,15 @@
+.order-complete {
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.order-complete__icon {
+  max-width: 100px;
+  max-height: 100px;
+}
+.order-complete__text {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}

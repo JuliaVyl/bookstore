@@ -1,4 +1,5 @@
-import { BOOK_ADDED_TO_CART, BOOK_DELETED_FROM_CART } from "../action-types";
+import { BOOK_ADDED_TO_CART, BOOK_DELETED_FROM_CART, CART_LOADED_FROM_STORAGE,
+  CLEAN_CART } from "../action-types";
 
 const updateCartItems = (cartItems, item, idx) => {
 
@@ -66,6 +67,14 @@ const shoppingCartReducer = (state, action) => {
     
     case BOOK_DELETED_FROM_CART:
       return updateOrder(state, action.payload, -1);
+    case CART_LOADED_FROM_STORAGE:
+      return {
+        cartItems: action.payload
+      }
+    case CLEAN_CART: 
+      return {
+        cartItems: []
+      }
     default: return state.cart;
   }
 }

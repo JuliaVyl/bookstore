@@ -2,6 +2,11 @@
   grid-column: span 1;
   max-width: 424px;
   display: flex;
+    transition: .6s;
+}
+.books-list__book-card:hover {
+  transform: scale(1.05);
+  transition: .6s;
 }
 .book-card__image {
   width: 212px;
@@ -24,6 +29,37 @@
   flex-direction: column;
   width: 212px;
   padding: 48px 0 48px 36px;
+}
+.book-card__about-info {
+  transition: .6s;
+}
+[helper] {
+  position: relative;
+  cursor: pointer;
+}
+[helper]::after {
+  content: attr(helper); 
+    position: absolute;
+    font-size: 12px;
+    width: 140px; 
+    left: 0; top: 0;
+    background: #9b94c3;
+    color: #fff; 
+    padding: 0.5em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    pointer-events: none; 
+    opacity: 0; 
+    transition: 1s;
+}
+[helper]:hover::after {
+  opacity: 1; 
+  top: 20px; 
+ }
+.book-card__about-info:hover::after {
+  content: ('Reed more...');
+  transform: scale(1.05);
+  transition: .6s;
+  cursor: pointer;
 }
 .about__author {
   font-size: 10px;
