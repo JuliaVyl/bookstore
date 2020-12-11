@@ -1,4 +1,7 @@
 .footer {
+  position: block;
+  bottom: 0;
+  left: 0;
   height: 100px;
   width: 100%;
   background: #EFEEF6;
@@ -50,4 +53,19 @@
 }
 .footer__contacts-links:hover {
   color: #838f9b;
+}
+@media (max-width: 1024px) {
+  .footer__wrapper {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  .footer__contacts-links {
+    font-size: 12px;
+  }
+}
+@media (max-width: 590px) {
+  .footer__logo {
+    display: none;
+  }
 }

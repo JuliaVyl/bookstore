@@ -2,3 +2,14 @@
   padding: 0 160px 0 0;
   display: flex;
 }
+@media (max-width: 768px) {
+  .books__wrapper {
+    padding: 0 0;
+  }
+}
+@media (max-width: 660px) {
+  .books__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

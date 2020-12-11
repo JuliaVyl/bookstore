@@ -41,12 +41,12 @@
   background: #9E98DC url(../../assets/img/icons/arrow.svg) no-repeat right 55px bottom 19px;
 }
 .home__second-promo {
-  width: 158px;
+  width: 108px;
   height: 273px;
-  background: #FF8FE6 url(../../assets/img/icons/arrow.svg) no-repeat right 80px bottom 19px;
+  background: #FF8FE6 url(../../assets/img/icons/arrow.svg) no-repeat right 30px bottom 19px;
   position: absolute;
   top: 475px;
-  right: -23px;
+  right: 0px;
   box-shadow: 0px 24px 36px rgba(53, 49, 84, 0.28);
   transition: all .2s;
   cursor:pointer;
@@ -54,7 +54,7 @@
 }
 .home__second-promo:hover {
   transform: scale(1.1);
-  background: #FF8FE6 url(../../assets/img/icons/arrow.svg) no-repeat right 65px bottom 19px;
+  background: #FF8FE6 url(../../assets/img/icons/arrow.svg) no-repeat right 17px bottom 19px;
 }
 .promo-text {
   font-weight: bold;
@@ -68,4 +68,77 @@
 }
 .home__second-promo-text {
   margin: 169px 68px 36px 20px;
+}
+@media (max-width: 1024px) {
+  .home__logo {
+    top: 170px;
+  }
+  .home__first-promo {
+    width: 119px;
+    height: 174px;
+    background: #9E98DC url(../../assets/img/icons/arrow.svg) no-repeat right 43px bottom 5px;
+    top: 155px;
+    right: 74px;
+  }
+  .home__first-promo:hover {
+    transform: scale(1.05);
+    background: #9E98DC url(../../assets/img/icons/arrow.svg) no-repeat right 36px bottom 5px;
+  }
+  .promo-text {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #1C2A39;
+  }
+  .home__second-promo {
+    width: 108px;
+    height: 243px;
+    background: #FF8FE6 url(../../assets/img/icons/arrow.svg) no-repeat right 32px bottom 6px;
+    position: absolute;
+    top: 375px;
+    right: 0px;
+  }
+  .home__second-promo:hover {
+    transform: scale(1.05);
+    background: #FF8FE6 url(../../assets/img/icons/arrow.svg) no-repeat right 45px bottom 6px;
+  }
+}
+@media (max-width: 890px) {
+  .home__logo {
+    top: 170px;
+  }
+  .home__bg {
+    width: 100%;
+    background-size: cover;
+  }
+  .home__first-promo, .home__second-promo  {
+    display: none;
+  }
+  
+  .home__wrapper {
+    padding: 0 0;
+    margin-bottom: 54px;
+  }
+}
+@media (max-width: 660px) {
+  .home__wrapper {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 590px) {
+  .home__bg {
+    margin-top: 66px;
+  }
+  .home__logo {
+    top: 90px;
+  }
+}
+@media (max-width: 424px) {
+  .home__bg {
+    margin-top: 66px;
+  }
+  .home__logo {
+    top: 80px;
+    font-size: 30px;
+  }
 }

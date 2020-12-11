@@ -22,9 +22,6 @@
   margin-bottom: 23px;
   transition: all .2s;
 }
-.categories__list-item:last-child {
-  margin-bottom: 0;
-}
 .categories__list-item:hover {
   transform: scale(1.1);
 }
@@ -38,6 +35,45 @@
 }
 .categories__list-item_active:hover {
   transform: scale(1);
-  color: #8e9395;
 }
-
+@media (max-width: 890px) {
+  .categories__list-item { 
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 80px;
+  }
+  .categories__list-item_active {
+    font-size: 18px;
+    line-height: 22px;
+    background: url('../../assets/img/icons/ellipse-bestsellers.svg') no-repeat left 68px center;
+  }
+}
+@media (max-width: 816px) {
+  .categories__list-item { 
+    padding-left: 30px;
+  }
+  .categories__list-item_active {
+    background: url('../../assets/img/icons/ellipse-bestsellers.svg') no-repeat left 18px center;
+  }
+}
+@media (max-width: 660px) {
+  .categories {
+    margin: 0 0;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .categories__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    max-width:  100%;
+    padding: 0 10px;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 370px) {
+  .categories {
+    margin-top: 66px;
+  }
+}

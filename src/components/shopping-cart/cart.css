@@ -140,3 +140,13 @@
   color: #4C3DB2;
   font-size: 11px;
 }
+@media (max-width: 768px) {
+  .cart {
+    width: 80%;
+  }
+}
+@media (max-width: 424px) {
+  .cart {
+    width: 90%;
+  }
+}

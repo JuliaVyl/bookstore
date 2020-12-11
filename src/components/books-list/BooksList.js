@@ -52,6 +52,7 @@ const BooksList = () => {
     <div className="books-list">
       { loading && <Spinner/> }
       { error && <ErrorIndicator/> }
+      { !books.length && <p className="no-books">No books were found</p>}
       { books.map((book) => {
         return (
           <BookListItem 

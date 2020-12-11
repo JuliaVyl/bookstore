@@ -10,7 +10,6 @@
   box-shadow: 0px 24px 36px rgba(53, 49, 84, 0.20); 
   z-index: 2;
   padding: 30px 30px;
-
 }
 .more__container {
   display: flex;
@@ -67,4 +66,37 @@
   text-transform: uppercase;
   color: #1C2A39;
   margin-bottom: 16px;
+}
+@media (max-width: 768px) {
+  .more {
+    width: 80%;
+  }
+}
+@media (max-width: 590px) {
+  .more {
+    z-index: 10;
+  }
+  .more__image {
+    width: 102px;
+    height: 190px;  
+  }
+  .more__description {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .more__author {
+    font-size: 12px;
+  }
+  .more__title {
+    font-size: 14px;
+  }
+  .more__cost {
+    font-size: 14px;
+  }
+}
+@media (max-width: 340px) and (max-height: 700px) {
+  .more__image {
+    display: none;
+  }
+
 }

@@ -17,10 +17,6 @@ const Cart = ({closeCart}) => {
   const dispatch = useDispatch();
   const api = useContext(apiContext);
 
-  console.log('error: ' + error)
-  console.log('loading: ' + loading)
-  console.log(orderData.orderId)
-
   const [value, setValue] = useState('');
 
   let total = 0;

@@ -17,3 +17,17 @@
     margin: auto;
   }
 }
+@media (max-width: 590px) {
+  .books-list {
+    margin: 0 0;
+    margin-left: 20px;
+    row-gap: 36px;
+  }
+}
+@media (max-width: 413px) {
+  .books-list {
+    row-gap: 40px;
+    justify-items: center;
+    margin-left: 0;
+  }
+}

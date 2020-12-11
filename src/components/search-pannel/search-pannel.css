@@ -62,3 +62,8 @@
   color: #4C3DB2;
   font-size: 11px;
 }
+@media (max-width: 590px) {
+  .search-pannel {
+    width: 90%;
+  }
+}
