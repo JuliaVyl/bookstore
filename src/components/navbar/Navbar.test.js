@@ -11,9 +11,9 @@ const mockStore = configureMockStore(middlewares);
 
 describe('Navbar', () => {
   let navWrapper;
-
+  let store;
   beforeEach(() => {
-    const store = mockStore({ 
+    store = mockStore({ 
       cart: { cartItems: [] },
       checkout: {data: {
         status: 'success',
@@ -52,13 +52,17 @@ describe('Navbar', () => {
     expect(navWrapper.find('.navbar__icons')).toHaveLength(1);
   });
 
+  it('has cart class', () => {
+    expect(navWrapper.find('.navbar__cart-icon-pic')).toHaveLength(1);
+  });
+
   it('shows Cart component', () => {
     expect(navWrapper.find('.navbar__cart-icon-pic')).toHaveLength(1);
     const submitButton = navWrapper.find('.navbar__cart-icon-pic');
     submitButton.simulate('click');
     expect(navWrapper.find(Cart)).toHaveLength(1);
   });
-
+  
   it('shows SearchPannel component', () => {
     expect(navWrapper.find('.navbar__search-icon-pic')).toHaveLength(1);
     const submitButton = navWrapper.find('.navbar__search-icon-pic');

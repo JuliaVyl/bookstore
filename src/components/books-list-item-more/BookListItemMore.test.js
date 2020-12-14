@@ -1,22 +1,39 @@
 import { shallow } from 'enzyme';
-import BookListItem from './BookListItem';
+import BookListItemMore from './BookListItemMore';
+import React from 'react';
 
-import img1 from '../../assets/img/book-1.jpg';
-
-describe('BooksListItem', () => {
-
-  it('has div tag', () => {
-    const booksListItem = shallow(<BookListItem />);
-    const tag = booksListItem.find('div');
-
-    expect(tag).toHaveLength(7);
+describe('BooksListItemMore', () => {
+  let wrapper;
+  const book = {
+    id: 1,
+    coverImage: '',
+    title: '',
+    author: '',
+    fulltDesc: '',
+    price: 20
+  }
+  beforeEach(() => {
+    wrapper = shallow(<BookListItemMore book={book}/>);
   });
-
-  it('has books-list__book-card class', () => {
-    const booksListItem = shallow(<BookListItem />);
-    const clazz = booksListItem.find('.books-list__book-card');
-
-    expect(clazz).toHaveLength(1);
+  it('has more class', () => {
+    expect(wrapper.find('.more')).toHaveLength(1);
+  });
+  it('has more__close, more__container and more__about classes', () => {
+    expect(wrapper.find('.more__close')).toHaveLength(1);
+    expect(wrapper.find('.more__container')).toHaveLength(1);
+    expect(wrapper.find('.more__about')).toHaveLength(1);
+  });
+  it('has more__close, more__container and more__about chilren classes', () => {
+    expect(wrapper.find('.more__image')).toHaveLength(1);
+    expect(wrapper.find('.more__image')).toHaveLength(1);
+    expect(wrapper.find('.more__author')).toHaveLength(1);
+    expect(wrapper.find('.more__title')).toHaveLength(1);
+    expect(wrapper.find('.more__description')).toHaveLength(1);
+    expect(wrapper.find('.more__cost')).toHaveLength(1);
+  });
+  it('has 1 button and 1 img tag', () => {
+    expect(wrapper.find('button')).toHaveLength(1);
+    expect(wrapper.find('img')).toHaveLength(1);
   });
 
 });

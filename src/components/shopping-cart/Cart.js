@@ -83,7 +83,7 @@ const Cart = ({closeCart}) => {
                 <button type="submit" className="cart__order-buy">Buy</button>
               </form>
               {loading && <Spinner />}
-              {error!==null && <ErrorIndicator />}
+              {error && <ErrorIndicator />}
               
               
             </div>
