@@ -2,7 +2,7 @@ import { useContext, useEffect, useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchBooks, bookAddedToCart } from '../../actions/actions';
 
-import { apiContext } from '../../index.js';
+import { apiContext } from "../../service/apiContext";
 import ErrorIndicator from '../error-indicator/ErrorIndicator';
 import Spinner from '../spinner/Spinner';
 import BookListItem from '../books-list-item/BookListItem';

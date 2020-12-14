@@ -1,4 +1,4 @@
-import React, { createContext } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import App from './components/app/App';
@@ -7,10 +7,9 @@ import store from './store.js';
 
 import './index.css';
 import BookstoreService from './service/bookstore-service';
+import { apiContext } from './service/apiContext';
 
 const api = new BookstoreService();
-
-export const apiContext = new createContext();
 
 ReactDOM.render(
   <Provider store={store}>

@@ -1,8 +1,8 @@
 
 import { useContext, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { apiContext } from '../..';
 import { bookAddedToCart, bookDeletedFromCart, cleanOrderData, fetchOrder } from '../../actions/actions';
+import { apiContext } from '../../service/apiContext';
 import ErrorIndicator from '../error-indicator/ErrorIndicator';
 import OrderComplete from '../order-complete/OrderComplete';
 import Spinner from '../spinner/Spinner';

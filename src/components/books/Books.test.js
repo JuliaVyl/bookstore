@@ -5,9 +5,15 @@ import BooksList from '../books-list/BooksList';
 
 describe('Books', () => {
 
-  it('has .books class', () => {
+  it('has books class', () => {
     const booksWrapper = shallow(<Books />);
     const booksClass = booksWrapper.find('.books');
+
+    expect(booksClass).toHaveLength(1);
+  });
+  it('has books__wrapper class', () => {
+    const booksWrapper = shallow(<Books />);
+    const booksClass = booksWrapper.find('.books__wrapper');
 
     expect(booksClass).toHaveLength(1);
   });
