@@ -10,7 +10,7 @@ const Footer = () => {
             <a className="footer__email-link" href="mailto:julia.vyl@gmail.com">Click here</a>
           </div>
           <div className="footer__contacts">
-            <a className="footer__contacts-links" href="#!">github</a>
+            <a className="footer__contacts-links" href="https://github.com/JuliaVyl">github</a>
             <a className="footer__contacts-links" href="https://www.instagram.com/julvyl/">instagram</a>
           </div>
       </div>
