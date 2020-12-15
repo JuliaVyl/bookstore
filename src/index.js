@@ -8,8 +8,11 @@ import store from './store.js';
 import './index.css';
 import BookstoreService from './service/bookstore-service';
 import { apiContext } from './service/apiContext';
+import { firebaseIni } from './utils/firebaseConfig';
+import FirebaseService from './service/firebaseService';
 
-const api = new BookstoreService();
+firebaseIni();
+const api = new FirebaseService();
 
 ReactDOM.render(
   <Provider store={store}>
