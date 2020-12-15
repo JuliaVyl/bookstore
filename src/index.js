@@ -6,7 +6,6 @@ import { Provider } from 'react-redux';
 import store from './store.js';
 
 import './index.css';
-import BookstoreService from './service/bookstore-service';
 import { apiContext } from './service/apiContext';
 import { firebaseIni } from './utils/firebaseConfig';
 import FirebaseService from './service/firebaseService';

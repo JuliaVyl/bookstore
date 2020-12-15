@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { filterBooksByText } from '../../actions/actions';
 import './search-pannel.css'
 const SearchPannel = ({closeSearchPannel}) => {

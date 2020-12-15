@@ -5,7 +5,7 @@ import './error-indicator.css';
 const ErrorIndicator = () => {
   return (
     <div className="error">
-      <img className="error__pic" src={err}></img>
+      <img className="error__pic" src={err} alt="error"></img>
       <h1 className="error__oops">Opps!</h1>
       <h2 className="error__text">Something went wrong...</h2>
     </div>

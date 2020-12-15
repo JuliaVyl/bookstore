@@ -1,16 +1,15 @@
 import './home.css'
 import bg from '../../assets/img/banner.jpg';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { filterBooksByCategory } from '../../actions/actions';
 
 const Home = () => {
-  const bestsellers = useSelector(state => state.books.filterByCategory);
   const dispatch = useDispatch();
 
   return (
     <div className="home" id="home">
       <div className="home__wrapper">
-        <img className="home__bg" src={bg} alt="home-page-photo"></img>
+        <img className="home__bg" src={bg} alt="home-page"></img>
         <div className="home__logo">Bookstore</div>
         <a href="#about" className="home__first-promo">
           <div className="home__first-promo-text promo-text">Charity your old books</div>

@@ -16,7 +16,9 @@ const Navbar = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(loadCartFromStorage(JSON.parse(localStorage.getItem('cart'))));
+    const cart = localStorage.getItem('cart');
+    if (cart)
+      dispatch(loadCartFromStorage(JSON.parse(cart)));
   }, [dispatch]);
 
   useEffect(() => {
