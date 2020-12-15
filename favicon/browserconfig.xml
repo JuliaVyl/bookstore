@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square150x150logo src="E:\Work\Portfolio\bookstore\src\assets\favicon/mstile-150x150.png"/>
+            <TileColor>#2d89ef</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>
+
+<!-- links for favicon
+
+<link rel="apple-touch-icon" sizes="180x180" href="E:\Work\Portfolio\bookstore\src\assets\favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="E:\Work\Portfolio\bookstore\src\assets\favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="E:\Work\Portfolio\bookstore\src\assets\favicon/favicon-16x16.png">
+<link rel="manifest" href="E:\Work\Portfolio\bookstore\src\assets\favicon/site.webmanifest">
+<link rel="mask-icon" href="E:\Work\Portfolio\bookstore\src\assets\favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="E:\Work\Portfolio\bookstore\src\assets\favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-config" content="E:\Work\Portfolio\bookstore\src\assets\favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"> -->
