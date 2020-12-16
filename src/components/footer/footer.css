@@ -64,6 +64,11 @@
     font-size: 12px;
   }
 }
+@media (max-width: 768px) {
+  .footer__contacts-links {
+    font-size: 12px;
+  }
+}
 @media (max-width: 590px) {
   .footer__logo {
     display: none;

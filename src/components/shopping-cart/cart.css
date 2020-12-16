@@ -31,22 +31,28 @@
 .cart__close:hover, .cart__close:hover, .cart__close:active {
   color: #a2a7ad;
 }  
-
 .cart__book {
   display: flex;
-  flex-direction: wrap;
+  flex-direction: row;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.cart__book-pic {
-  width: 90px; 
-  height: auto;
+.cart__book-cover {
+  width: 120px; 
+  height: 200px;
   margin-right: 20px;
+}
+.cart__book-img {
+  width: 100%; 
+  height: 100%;
+  overflow: hidden;
 }
 .cart__book_left-side {
   display: flex;
-  flex-direction: wrap;
-  margin-right: 20px;
+  max-width: 50%;
+}
+.cart__book-about {
+  max-width: 30%;
 }
 .cart__book-author{
   font-size: 12px;
@@ -64,9 +70,12 @@
 }
 .cart__book-info {
   display: flex;
-  flex-direction: wrap;
   align-self: flex-start;
   justify-content: flex-end;
+  min-width: 15%;
+}
+.cart__book-info-btns {
+  display: flex;
 }
 .cart__info-minus, .cart__info-add {
   background-color: #ebebec;
@@ -148,5 +157,29 @@
 @media (max-width: 424px) {
   .cart {
     width: 90%;
+  }
+  .cart__book-cover {
+    width: 80px; 
+    height: 120px;
+    margin-right: 20px;
+  }
+  .cart__book-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 50ch;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .cart__order-email,  .cart__order-text {
+   font-size: 14px;
+  }
+  .cart__order-buy {
+    font-size: 9px;
+    line-height: 10px;
+    text-transform: uppercase;
+    height: 42px;
+    width: 116px;
+    transition: all .3s;
   }
 }

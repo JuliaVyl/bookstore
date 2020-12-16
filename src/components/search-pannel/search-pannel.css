@@ -62,8 +62,25 @@
   color: #4C3DB2;
   font-size: 11px;
 }
-@media (max-width: 590px) {
+@media (max-width: 850px) {
   .search-pannel {
     width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .search-pannel {
+    padding: 10px 10px;
+  }
+  .search-pannel__input-field {
+    width: 80%;
+    margin-right: 10px;
+    font-size: 13px;
+  }
+  .search-pannel__btn {
+    font-weight: bold;
+    font-size: 8px;
+    height: 42px;
+    width: 90px;
+    margin-right: 10px;
   }
 }

@@ -78,7 +78,7 @@
   }
   .more__image {
     width: 102px;
-    height: 190px;  
+    height: auto; 
   }
   .more__description {
     font-size: 12px;

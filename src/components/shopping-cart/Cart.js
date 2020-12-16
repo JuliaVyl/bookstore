@@ -51,7 +51,9 @@ const Cart = ({closeCart}) => {
                 return (
                   <div className="cart__book" key={book.id}>
                     <div className="cart__book_left-side">
-                      <img className="cart__book-pic" src={book.coverImage} alt={book.title}/>
+                      <div className="cart__book-cover">
+                        <img className="cart__book-img" src={book.coverImage} alt={book.title}/>
+                      </div>
                       <div className="cart__book-about">
                         <div className="cart__book-title">{book.title}</div>
                         <div className="cart__book-author">{book.author}</div>
@@ -59,9 +61,11 @@ const Cart = ({closeCart}) => {
                     </div>
                     <div className="cart__book_right-side">
                       <div className="cart__book-info">
-                        <button className="cart__info-minus" onClick={() => dispatch(bookDeletedFromCart(book.id))}>-</button>
-                        <div className="cart__info-amount">{book.amount}</div>
-                        <button className="cart__info-add" onClick={() => dispatch(bookAddedToCart(book.id))}>+</button>
+                        <div className="cart__book-info-btns">
+                          <button className="cart__info-minus" onClick={() => dispatch(bookDeletedFromCart(book.id))}>-</button>
+                          <div className="cart__info-amount">{book.amount}</div>
+                          <button className="cart__info-add" onClick={() => dispatch(bookAddedToCart(book.id))}>+</button>
+                        </div>
                         <div className="cart__info-cost">${(book.price*book.amount).toFixed(2)}</div>
                       </div>
                     </div>
