@@ -75,15 +75,17 @@ describe('Cart', () => {
 
   it('has cart__book_left-side class and its children classes', () => {
     expect(cartWrapper.find('.cart__book_left-side')).toHaveLength(1);
-    expect(cartWrapper.find('.cart__book-pic')).toHaveLength(1);
+    expect(cartWrapper.find('.cart__book-cover')).toHaveLength(1);
+    expect(cartWrapper.find('.cart__book-img')).toHaveLength(1);
     expect(cartWrapper.find('.cart__book-about')).toHaveLength(1);
     expect(cartWrapper.find('.cart__book-title')).toHaveLength(1);
     expect(cartWrapper.find('.cart__book-author')).toHaveLength(1);
   });
   
   it('has cart__book_right-side class and its children classes', () => {
-    expect(cartWrapper.find('.cart__book_left-side')).toHaveLength(1);
+    expect(cartWrapper.find('.cart__book_right-side')).toHaveLength(1);
     expect(cartWrapper.find('.cart__book-info')).toHaveLength(1);
+    expect(cartWrapper.find('.cart__book-info-btns')).toHaveLength(1);
     expect(cartWrapper.find('.cart__info-minus')).toHaveLength(1);
     expect(cartWrapper.find('.cart__info-amount')).toHaveLength(1);
     expect(cartWrapper.find('.cart__info-add')).toHaveLength(1);

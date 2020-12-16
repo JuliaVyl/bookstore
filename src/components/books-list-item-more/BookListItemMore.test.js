@@ -25,7 +25,7 @@ describe('BooksListItemMore', () => {
   });
   it('has more__close, more__container and more__about chilren classes', () => {
     expect(wrapper.find('.more__image')).toHaveLength(1);
-    expect(wrapper.find('.more__image')).toHaveLength(1);
+    expect(wrapper.find('.more__image-pic')).toHaveLength(1);
     expect(wrapper.find('.more__author')).toHaveLength(1);
     expect(wrapper.find('.more__title')).toHaveLength(1);
     expect(wrapper.find('.more__description')).toHaveLength(1);
